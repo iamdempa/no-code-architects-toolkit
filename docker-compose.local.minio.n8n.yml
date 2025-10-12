@@ -9,7 +9,7 @@ services:
     ports:
       - "${PORT:-5050}:5050"
     env_file:
-      - openai-edge-tts/.env
+      - ./openai-edge-tts/.env
     environment: # optionally define in -e argument when running docker command
       API_KEY: ${API_KEY:-your_api_key_here}
       PORT: ${PORT:-5050}
