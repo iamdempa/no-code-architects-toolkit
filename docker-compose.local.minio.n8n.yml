@@ -1,6 +1,6 @@
 services:
   tts:
-    container_name: openai-edge-tts
+    container_name: openai-edge-tts:latest-ffmpeg
     restart: unless-stopped
     build:
       context: openai-edge-tts
